@@ -45,16 +45,17 @@ public class MainActivity extends AppCompatActivity {
                     if(showdata(readdata(),tb_username,tb_password)){
                         speditor.putString("username",tb_username);
                         speditor.commit();
+                        Toast.makeText(getApplicationContext(),"Successfully logged in.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, welcome.class);
                         startActivity(intent);
                         finish();
                     }else{
                         c_err++;
                         if(c_err < 3){
-                            Toast.makeText(getApplicationContext(),"Kullanıcı girişi hatalı! ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Wrong id or password ", Toast.LENGTH_SHORT).show();
                         }else{
                             btLogin.setEnabled(false);
-                            Toast.makeText(getApplicationContext(),"Hatalı kullanıcı girişi, belirlenen limiti aştı! ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Maximum limit exceeded! Redirecting to registration. ", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(MainActivity.this,register.class));
                             finish();
                         }
