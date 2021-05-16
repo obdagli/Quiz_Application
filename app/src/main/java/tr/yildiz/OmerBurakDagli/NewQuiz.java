@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 public class NewQuiz extends AppCompatActivity {
     EditText et_qtime,et_qpoint;
-    public static RadioButton rb_2,rb_3,rb_4,rb_5;
+    public static RadioButton rb_2,rb_3,rb_4;
     Button bt_change;
     String diff;
     SharedPreferences sp;
@@ -187,7 +187,6 @@ public class NewQuiz extends AppCompatActivity {
         rb_2 = findViewById(R.id.rb_2);
         rb_3 = findViewById(R.id.rb_3);
         rb_4 = findViewById(R.id.rb_4);
-        rb_5 = findViewById(R.id.rb_5);
         bt_change = findViewById(R.id.bt_change);
     }
     public void spcaller(){
@@ -202,8 +201,6 @@ public class NewQuiz extends AppCompatActivity {
             rb_3.setChecked(true);
         }else if(rb_checker.matches("4")){
             rb_4.setChecked(true);
-        }else if(rb_checker.matches("5")){
-            rb_5.setChecked(true);
         }
     }
     public void getSharedInformation(){

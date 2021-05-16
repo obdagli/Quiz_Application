@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="REGISTRATION"
+        android:textColor="#3F51B5"
         android:textSize="30sp" />
 
     <LinearLayout
@@ -203,6 +204,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/round_button"
+            android:backgroundTint="#009688"
             android:text="Open"
             android:textColor="@android:color/white" />
     </LinearLayout>
@@ -210,22 +212,24 @@
 
     <Button
         android:id="@+id/bt_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="72dp"
         android:layout_marginTop="0dp"
         android:background="@drawable/round_button"
+        android:backgroundTint="#3F51B5"
         android:text="register"
         android:textColor="@android:color/white" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/bt_signin"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#3F51B5"
         android:text="Sign-in"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="-48dp"
-        android:layout_marginLeft="50dp"
-        android:background="@drawable/round_button"/>
+        android:textColor="@android:color/white" />
 </LinearLayout>

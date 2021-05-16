@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/u_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginStart="155dp"
         android:layout_marginTop="62dp"
         android:layout_marginEnd="156dp"
@@ -24,32 +24,25 @@
         android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="186dp"
+        android:layout_marginTop="204dp"
         android:gravity="center"
         android:text="Welcome Message!"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bt_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="159dp"
-        android:text="Logout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_createquiz" />
 
     <Button
         android:id="@+id/bt_question"
         android:layout_width="339dp"
         android:layout_height="61dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#3F51B5"
         android:text="Add a New Question"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMessage" />
 
@@ -57,7 +50,9 @@
         android:id="@+id/bt_listquestion"
         android:layout_width="340dp"
         android:layout_height="57dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:drawableTint="#3F51B5"
         android:text="List all Questions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -65,25 +60,43 @@
         app:layout_constraintTop_toBottomOf="@+id/bt_question" />
 
     <Button
-        android:id="@+id/bt_qsettings"
-        android:layout_width="339dp"
-        android:layout_height="55dp"
+        android:id="@+id/bt_createquiz"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Quiz Settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Create a New Quiz"
+        app:layout_constraintBottom_toTopOf="@+id/bt_logout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_listquestion" />
 
     <Button
-        android:id="@+id/bt_createquiz"
-        android:layout_width="339dp"
-        android:layout_height="55dp"
+        android:id="@+id/bt_qsettings"
+        android:layout_width="110dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="Create a New Quiz"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Settings"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/bt_createquiz"
+        app:layout_constraintTop_toBottomOf="@+id/bt_listquestion" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="159dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_qsettings" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_createquiz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

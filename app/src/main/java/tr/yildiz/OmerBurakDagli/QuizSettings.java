@@ -49,7 +49,6 @@ public class QuizSettings extends AppCompatActivity {
         rb_2 = findViewById(R.id.rb_2);
         rb_3 = findViewById(R.id.rb_3);
         rb_4 = findViewById(R.id.rb_4);
-        rb_5 = findViewById(R.id.rb_5);
         bt_apply = findViewById(R.id.bt_apply);
     }
     public boolean isFill(){

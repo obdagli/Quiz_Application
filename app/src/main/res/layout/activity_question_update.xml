@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="UPDATE YOUR QUESTION"
-        android:textColor="#011BAC"
+        android:textColor="#3F51B5"
         android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
     <EditText
         android:id="@+id/et_qtime"
         android:layout_width="294dp"
-        android:layout_height="59dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="564dp"
         android:ems="10"
@@ -34,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.024" />
 
     <EditText
         android:id="@+id/et_qpoint"
@@ -99,8 +100,9 @@
         android:layout_marginStart="59dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="245dp"
+        android:backgroundTint="#3F51B5"
         android:text="Correct Answer"
-        android:textColor="#011BAC"
+        android:textColor="#3F51B5"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.031"
@@ -117,7 +119,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0">
@@ -183,13 +185,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="6dp"
         android:text="Number of Choice"
-        android:textColor="#011BAC"
+        android:textColor="#3F51B5"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -200,6 +200,7 @@
         android:layout_marginStart="137dp"
         android:layout_marginTop="38dp"
         android:layout_marginEnd="183dp"
+        android:backgroundTint="#3F51B5"
         android:text="Update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

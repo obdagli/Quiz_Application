@@ -35,9 +35,9 @@ public class AddQuestion extends AppCompatActivity {
             public void onClick(View v) {
                 if(isFill()){
                     AddQuestion();
-
+                    Toast.makeText(getApplicationContext(),"Successfully added.", Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplicationContext(),"-------------------- ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"You must fill the blank areas.", Toast.LENGTH_SHORT).show();
                 }
             }
 

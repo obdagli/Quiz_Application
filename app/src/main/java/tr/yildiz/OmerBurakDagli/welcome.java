@@ -90,7 +90,7 @@ public class welcome extends AppCompatActivity {
     private void showdata(Cursor show,String username){
         while( show.moveToNext()) {
             if(username.equals(show.getString(show.getColumnIndex("username")))){
-                textViewMessage.setText("Hi, "+show.getString(show.getColumnIndex("name"))+" "+show.getString(show.getColumnIndex("surname"))+"!");
+                textViewMessage.setText("Welcome, "+show.getString(show.getColumnIndex("name"))+" "+show.getString(show.getColumnIndex("surname"))+".");
                 byte[] b = show.getBlob(show.getColumnIndex("userphoto"));
                 bitmap = BitmapFactory.decodeByteArray(b,0,b.length);
                 u_photo.setImageBitmap(bitmap);
